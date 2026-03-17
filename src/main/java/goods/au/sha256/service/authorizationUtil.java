@@ -1,8 +1,9 @@
-package goods.au.sha256.common;
+package goods.au.sha256.service;
 
+import goods.au.sha256.common.key;
 import org.apache.commons.codec.binary.Base64;
 
-public class authorization {
+public class authorizationUtil {
     public static String getAuthorization(String secureKey){
         String authHash = "Basic ";
         String account = secureKey+":";
