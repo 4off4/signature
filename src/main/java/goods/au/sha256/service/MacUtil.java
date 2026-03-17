@@ -22,8 +22,9 @@ public class MacUtil {
         String appId = "";
         String appTransId = "";
         String macKey = key.MAC_KEY;
-        String hmacInput = String.join("|", appId, appTransId, macKey);
+        String hmacInput = String.join("|", appId, appTransId);
         String result = makeHmacSHA256(hmacInput, macKey);
+
         System.out.println("Generated MAC: " + result);
     }
 }
