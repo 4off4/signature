@@ -1,6 +1,6 @@
 package goods.au.sha256.service;
 
-import goods.au.sha256.common.key;
+import goods.au.sha256.common.Key;
 import org.apache.commons.codec.binary.Base64;
 
 public class authorizationUtil {
@@ -13,6 +13,6 @@ public class authorizationUtil {
     }
 
     public static void main(String[] args) {
-        System.out.printf("Auth : " + getAuthorization(key.AUTH_KEY));
+        System.out.printf("Auth : " + getAuthorization(Key.AUTH_KEY));
     }
 }
